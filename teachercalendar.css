@@ -1,0 +1,152 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ededed;
+}
+.navigation-container{
+    position:absolute;
+    width: 100%;
+    background-color:white;
+}
+.logo-container{
+    position:static;
+}
+.welcome-container{
+    position:absolute;
+    left: 170px;
+    top: 15px;
+    color: #BF565A;
+}
+.navbar{
+    position:absolute;
+    top:20px;
+    right:50px;
+    color:#707070;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    padding-right: 20px;
+    padding-bottom:20px;
+}
+a{
+    text-decoration: none;
+    color: #707070;
+}
+a:hover{
+    text-decoration:none;
+    color: #0f2554;
+}
+a:active{
+    text-decoration: none;
+    color: #707070;
+}
+h2 {
+    font-weight: 600;
+    color: #BF565A;
+}
+h1{
+    font-weight: 600;
+}
+li {
+    list-style: none;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+.calendar-body{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-container{
+    display:grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 10px;
+    grid-template-areas: 
+    ". header"
+    "timeslots-container main";
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+.weekdays, .daynumbers{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+.weekdays{
+    background: white;
+    border-radius: 20px;
+}
+.header{
+    background: white;
+    grid-area: header;
+    border-radius: 20px;
+}
+.timeslots-container{
+    background:white;
+    grid-area: timeslots-container;
+    padding-left:15px;
+    border-radius: 20px;
+}
+.timeslots{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.timeslots li{
+    min-height: 45px;
+}
+.timeslots li:after{
+    content:"";
+    position: absolute;
+    left: 1px;
+    width: 100%;
+    height:1px;
+    background:#ededed;
+    z-index: 1;
+}
+.slot{
+    position:absolute;
+    background: #0f2554;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    z-index: 5px;
+    font-size: 10px;
+
+}
+.event-container{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows:repeat(66, 1fr) ;
+    grid-area: main;
+    position:relative;
+}
+.slot-1{
+    height: 90px;
+    grid-column: 2;
+    grid-row: 19;
+}
+.slot-2{
+    height: 135px;
+    grid-column:4;
+    grid-row: 31;
+}
+.slot-3{
+    height: 90px;
+    grid-column: 4;
+}

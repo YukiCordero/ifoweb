@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="studentss.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Guest</title>
+</head>
+<body>
+  <div class="navigation-container">
+    <div class = "logo-container">
+        <img src = Logo-Final-2.webp width = "150px" height = "-50px">
+    </div>
+  </div>
+  <div class = "welcome-container">
+    <h2>Welcome Guest</h2>
+  </div>
+  <nav class="navbar">
+    <ul>
+        <li><a href="GUEST.html">Home</a></li>
+        <li><a href="#">Request a Room</a></li>
+        <li><a href="studentss.html">Search Schedules</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <a href="index.html">
+            <i class='bx bx-log-out icon'>
+            <li>Logout</li></i>
+        </a>
+    </ul>
+  </nav>
+<div class="schedule-container">
+    <h1>Calendar Schedule</h1>
+</div>
+    <section class="home">
+        <main>
+          <div class="home-content">
+            <div class="heading"></div>
+            <div class="subheading">Schedules</div>
+            <div id=wrapper>
+              <div>
+                <label><h4>Search Instructor</h4></title>
+                  <select type="text" id="course" style="width:20%">
+                    <option value="BS-CpE">ALL</option>
+                    <option value="Cruz, John Paul T.">Cruz, John Paul T.</option>
+                    <option value="Requillo, Emmy Grace">Requillo, Emmy Grace</option>
+                  </select>
+                  <button class="archive" id=show_button onclick="show_table()"><i class="bx bx-search-alt-2 icon"></i></button>
+              </div>
+            <br>
+            <table id="data_table" class="data_tables">
+              <tr>
+                <th style="width:350px;">Full Name</th>
+                <th style="width:200px;">Room Number</th>
+                <th style="width:250px;">Email Address</th>
+                <th style="width:200px;">Date Requested</th>
+                <th style="width:200px;">Date To Be Used</th>
+                <th style="width:200px;">Course Code & Section</th>
+                <th style="width:250px;">Time</th>
+                
+              </tr>
+              <tr id="row1">
+                <td id="name_row1">Cruz, John Paul T. </td>
+                <td id="student_row1">405</td>
+                <td id="program_row1">jptcruz@mcm.edu.ph</td>
+                <td id="gender_row1">9/6/2022</td>
+                <td id="nat_row1">9/7/2022</td>     
+                <td id="nat_row1">CPE107L-1.A361</td> 
+                <td id="nat_row1">8:30AM-10:00AM</td>      
+                <td style="text-align:center;">
+                  
+                </td>
+              </tr>
+              <tr id="row2">
+                  <td id="name_row1">Requillo, Emmy Grace </td>
+                  <td id="student_row1">406</td>
+                  <td id="program_row1">egrequillo@mcm.edu.ph</td>
+                  <td id="gender_row1">9/6/2022</td>
+                  <td id="nat_row1">9/7/2022</td>    
+                  <td id="nat_row1">CPE143L.A361</td>
+                  <td id="nat_row1">1:00PM-2:30PM</td>
+                <td style="text-align:center;">
+                  
+                </td>
+              </tr>
+              
+            </table>
+            <table id="data_table3" class="data_tables" style="display:none">
+              <tr>
+                <th style="width:350px;">Full Name</th>
+                <th style="width:200px;">Room Number</th>
+                <th style="width:250px;">Email Address</th>
+                <th style="width:200px;">Date Requested</th>
+                <th style="width:200px;">Date To Be Used</th>
+                <th style="width:200px;">Course Code & Section</th>
+                <th style="width:200px;">Time</th>
+                
+              </tr>
+              <tr id="row1">
+                <td id="name_row1">Cruz, John Paul T. </td>
+                <td id="student_row1">405</td>
+                <td id="program_row1">jptcruz@mcm.edu.ph</td>
+                <td id="gender_row1">9/6/2022</td>
+                <td id="nat_row1">9/7/2022</td>     
+                <td id="nat_row1">CPE107L-1.A361</td> 
+                <td id="nat_row1">8:30AM-10:00AM</td>      
+                <td style="text-align:center;">
+                  
+                </td>
+              </tr>
+                
+                
+              
+            </table>
+            <table id="data_table2" class="data_tables" style="display:none">
+              <tr>
+                <th style="width:350px;">Full Name</th>
+                <th style="width:200px;">Room Number</th>
+                <th style="width:250px;">Email Address</th>
+                <th style="width:200px;">Date Requested</th>
+                <th style="width:200px;">Date To Be Used</th>
+                <th style="width:200px;">Course Code & Section</th>
+                <th style="width:200px;">Time</th>
+                
+              </tr>
+              <tr id="row1">
+                <td id="name_row1">Requillo, Emmy Grace </td>
+                <td id="student_row1">406</td>
+                <td id="program_row1">egrequillo@mcm.edu.ph</td>
+                <td id="gender_row1">9/6/2022</td>
+                <td id="nat_row1">9/7/2022</td>   
+                <td id="nat_row1">CPE143L.A361</td> 
+                <td id="nat_row1">1:00PM-2:30PM</td>           
+                <td style="text-align:center;">
+                  
+                </td>
+              </tr>
+                
+              </table>
+          </div>
+          </div>
+        </main>
+      </section>
+      <script src="teacher.js"></script>
+</body>
